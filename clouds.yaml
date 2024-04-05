@@ -1,0 +1,21 @@
+clouds:
+  admin:
+    auth:
+      auth_url: http://127.0.0.1:5000
+      password: a_big_secret
+      username: admin
+      user_domain_name: Default
+      project_name: admin
+      project_domain_name: Default
+    interface: public
+    region_name: RegionOne
+  demo:
+    auth:
+      auth_url: http://127.0.0.1:5000
+      password: secrete
+      username: demo
+      user_domain_name: Default
+      project_name: demo
+      project_domain_name: Default
+    interface: public
+    region_name: RegionOne
