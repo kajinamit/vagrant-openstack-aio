@@ -56,7 +56,7 @@ mkdir -p /tmp/openstack/image
 wget https://download.cirros-cloud.net/0.6.2/cirros-0.6.2-x86_64-disk.img -P /tmp/openstack/image
 mv /tmp/openstack/image/cirros-0.6.2-x86_64-disk.img /tmp/openstack/image/cirros-0.6.2-x86_64-disk-qcow2.img
 
-puppet apply --modulepath /usr/share/openstack-puppet/modules $MANIFEST
+puppet apply --modulepath /usr/share/openstack-puppet/modules $MANIFEST | tee -a /var/log/puppet.log
 
 mkdir /home/vagrant/.config
 mkdir -m 700 /home/vagrant/.config/openstack
