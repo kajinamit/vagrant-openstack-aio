@@ -28,6 +28,9 @@ case ${RELEASE} in
   "caracal")
      BRANCH='stable/2024.1'
      ;;
+  "master")
+     BRANCH=$RELEASE
+     ;;
   *)
      BRANCH="stable/${RELEASE}"
      ;;
