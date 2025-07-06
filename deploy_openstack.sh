@@ -19,14 +19,14 @@ fi
 
 RELEASE=${RELEASE:-master}
 case ${RELEASE} in
-  "antelope")
-     BRANCH='stable/2023.1'
-     ;;
-  "bobcat")
-     BRANCH='stable/2023.2'
-     ;;
   "caracal")
      BRANCH='stable/2024.1'
+     ;;
+  "dalmatian")
+     BRANCH='stable/2024.2'
+     ;;
+  "epoxy")
+     BRANCH='stable/2025.1'
      ;;
   "master")
      BRANCH=$RELEASE
